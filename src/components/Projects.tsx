@@ -48,24 +48,24 @@ export function Projects() {
       title="Featured Projects"
       subtitle="Proven implementations across AI, automation, and backend engineering"
     >
-      <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+      <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
         {projects.map((project, index) => (
           <Card key={index}>
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">{project.title}</h3>
-              <p className="text-slate-600 leading-relaxed">{project.description}</p>
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 leading-tight">{project.title}</h3>
+              <p className="text-slate-600 leading-relaxed text-sm sm:text-base">{project.description}</p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-5 sm:space-y-6">
               <div>
-                <h4 className="text-sm font-semibold text-slate-700 uppercase tracking-wide mb-3">
+                <h4 className="text-xs sm:text-sm font-semibold text-slate-700 uppercase tracking-wide mb-3">
                   Tech Stack
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {project.techStack.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
+                      className="px-3 py-1.5 bg-blue-100 text-blue-700 rounded-full text-xs sm:text-sm font-medium"
                     >
                       {tech}
                     </span>
@@ -73,11 +73,11 @@ export function Projects() {
                 </div>
               </div>
 
-              <div className="border-t pt-6">
-                <h4 className="text-sm font-semibold text-slate-700 uppercase tracking-wide mb-2">
+              <div className="border-t border-slate-200 pt-5 sm:pt-6">
+                <h4 className="text-xs sm:text-sm font-semibold text-slate-700 uppercase tracking-wide mb-2">
                   Outcome
                 </h4>
-                <p className="text-slate-700 font-medium text-lg">{project.outcome}</p>
+                <p className="text-slate-700 font-medium text-base sm:text-lg leading-relaxed">{project.outcome}</p>
               </div>
             </div>
           </Card>

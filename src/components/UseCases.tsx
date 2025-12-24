@@ -7,7 +7,6 @@ import {
   PenTool,
   Workflow,
   Link2,
-  ChevronRight,
 } from 'lucide-react';
 
 export function UseCases() {
@@ -75,54 +74,50 @@ export function UseCases() {
       title="Automation Use-Cases"
       subtitle="Real-world scenarios where AI automation delivers measurable business value"
     >
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
         {useCases.map((useCase, index) => {
           const Icon = useCase.icon;
           return (
             <Card key={index}>
-              <div className="flex items-start gap-4 mb-4">
-                <div className="bg-blue-100 p-3 rounded-lg">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="bg-gradient-to-br from-blue-100 to-blue-50 p-3 rounded-lg flex-shrink-0">
                   <Icon className="text-blue-600" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900">{useCase.title}</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-slate-900 leading-tight">{useCase.title}</h3>
               </div>
 
               <div className="space-y-4 mb-6">
                 <div>
-                  <h4 className="text-sm font-semibold text-slate-700 uppercase tracking-wide mb-1">
+                  <h4 className="text-xs font-semibold text-slate-700 uppercase tracking-wide mb-2">
                     Problem
                   </h4>
-                  <p className="text-slate-600">{useCase.problem}</p>
+                  <p className="text-slate-600 leading-relaxed">{useCase.problem}</p>
                 </div>
 
                 <div>
-                  <h4 className="text-sm font-semibold text-slate-700 uppercase tracking-wide mb-1">
+                  <h4 className="text-xs font-semibold text-slate-700 uppercase tracking-wide mb-2">
                     Solution
                   </h4>
-                  <p className="text-slate-600">{useCase.solution}</p>
+                  <p className="text-slate-600 leading-relaxed">{useCase.solution}</p>
                 </div>
 
-                <div className="bg-teal-50 rounded-lg p-4 border border-teal-200">
-                  <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-1">
+                <div className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-lg p-4 border border-teal-200/50">
+                  <h4 className="text-xs font-semibold text-slate-900 uppercase tracking-wide mb-2">
                     Business Benefit
                   </h4>
-                  <p className="text-slate-700 font-medium">{useCase.benefit}</p>
+                  <p className="text-slate-700 font-medium leading-relaxed">{useCase.benefit}</p>
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2">
                 {useCase.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full"
+                    className="text-xs bg-blue-100 text-blue-700 px-3 py-1.5 rounded-full font-medium"
                   >
                     {tag}
                   </span>
                 ))}
-              </div>
-
-              <div className="flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all duration-300 cursor-pointer">
-                Learn more <ChevronRight size={18} />
               </div>
             </Card>
           );

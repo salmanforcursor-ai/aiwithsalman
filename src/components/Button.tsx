@@ -16,13 +16,13 @@ export function Button({
   href,
 }: ButtonProps) {
   const baseStyles =
-    'px-6 py-3 rounded-lg font-medium transition-all duration-300 inline-flex items-center justify-center whitespace-nowrap';
+    'px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium transition-all duration-300 inline-flex items-center justify-center whitespace-nowrap text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2';
 
   const variants = {
     primary:
-      'bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:shadow-lg',
+      'bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:shadow-lg active:scale-95',
     secondary:
-      'bg-white text-blue-600 border-2 border-blue-600 hover:bg-blue-50',
+      'bg-white text-blue-600 border-2 border-blue-600 hover:bg-blue-50 active:scale-95',
   };
 
   const classes = `${baseStyles} ${variants[variant]} ${className}`;
