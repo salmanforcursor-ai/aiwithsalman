@@ -8,31 +8,16 @@
   </defs>
   <!-- Background Circle -->
   <circle cx="20" cy="20" r="20" fill="url(#faviconGradient)" />
-  <!-- S Letter - Clear and visible -->
+  <!-- S Letter - Bold, filled, and prominent -->
   <path
-    d="M13 19C13 15.5 15.5 13 19 13C21.5 13 23 14.5 23 16.5C23 18 21.5 19.5 19.5 19.5H17.5C16.5 19.5 16 20 16 21C16 22 16.5 22.5 17.5 22.5H19.5C21.5 22.5 23 24 23 26C23 27.5 21.5 29 19 29C15.5 29 13 26.5 13 23"
-    stroke="white"
-    stroke-width="2.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    fill="none"
+    d="M10 20C10 15 13.5 11 18 11C22 11 25 13.5 25 17C25 19.5 23 21.5 20.5 21.5H17.5C16.5 21.5 16 22 16 23C16 24 16.5 24.5 17.5 24.5H20.5C23 24.5 25 26.5 25 29C25 32.5 22 35 18 35C13 35 10 31 10 25"
+    fill="white"
   />
-  <!-- J Letter - Clear and visible -->
+  <!-- J Letter - Bold, filled, and prominent -->
   <path
-    d="M27 14V26C27 29 24.5 31.5 21 31.5C17.5 31.5 15 29 15 26"
-    stroke="white"
-    stroke-width="2.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    fill="none"
+    d="M29 11V27C29 30.5 26 33.5 22.5 33.5C19 33.5 16.5 30.5 16.5 27V11H29Z"
+    fill="white"
   />
-  <path
-    d="M23 26C23 27.5 22 28.5 21 28.5C20 28.5 19 27.5 19 26"
-    stroke="white"
-    stroke-width="2.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    fill="none"
-  />
+  <circle cx="22.5" cy="27" r="2" fill="url(#faviconGradient)" />
 </svg>
 
