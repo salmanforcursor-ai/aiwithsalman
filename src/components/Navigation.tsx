@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Logo } from './Logo';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,9 +31,10 @@ export function Navigation() {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="text-xl sm:text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+          className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+          aria-label="Salman Iqbal - Home"
         >
-          Salman Iqbal
+          <Logo size={32} showText={true} />
         </a>
 
         <div className="hidden md:flex gap-6 lg:gap-8">

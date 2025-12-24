@@ -1,0 +1,63 @@
+interface LogoProps {
+  className?: string;
+  size?: number;
+  showText?: boolean;
+}
+
+export function Logo({ className = '', size = 36, showText = true }: LogoProps) {
+  return (
+    <div className={`flex items-center gap-2.5 ${className}`}>
+      {/* SJ Logo Circle */}
+      <div className="relative flex items-center justify-center flex-shrink-0">
+        <svg
+          width={size}
+          height={size}
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stopColor="#2563eb" />
+              <stop offset="100%" stopColor="#14b8a6" />
+            </linearGradient>
+          </defs>
+          {/* Background Circle */}
+          <circle cx="20" cy="20" r="20" fill="url(#logoGradient)" />
+          {/* S Letter - Simplified and clearer */}
+          <path
+            d="M12 20C12 16.5 14.5 14 18 14C20.5 14 22 15.5 22 17.5C22 19 20.5 20.5 18.5 20.5H16.5C15.5 20.5 15 21 15 22C15 23 15.5 23.5 16.5 23.5H18.5C20.5 23.5 22 25 22 27C22 28.5 20.5 30 18 30C14.5 30 12 27.5 12 24"
+            stroke="white"
+            strokeWidth="2.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+          {/* J Letter - Simplified and clearer */}
+          <path
+            d="M26 14V26C26 29 23.5 31.5 20 31.5C16.5 31.5 14 29 14 26"
+            stroke="white"
+            strokeWidth="2.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+          <path
+            d="M22 26C22 27.5 21 28.5 20 28.5C19 28.5 18 27.5 18 26"
+            stroke="white"
+            strokeWidth="2.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+        </svg>
+      </div>
+      {showText && (
+        <span className="text-xl sm:text-2xl font-bold text-slate-900 hidden sm:inline">
+          Salman Iqbal
+        </span>
+      )}
+    </div>
+  );
+}
+
