@@ -1,5 +1,6 @@
 import { Section } from './Section';
 import { Card } from './Card';
+import { LazyImage } from './LazyImage';
 import { ExternalLink, Github } from 'lucide-react';
 
 export function Projects() {
@@ -10,6 +11,8 @@ export function Projects() {
         'Built end-to-end automation workflows using n8n and Make.com for enterprise clients, integrating multiple APIs and services.',
       techStack: ['n8n', 'Make.com', 'APIs', 'Webhooks'],
       outcome: 'Reduced manual data entry by 95% and saved 15+ hours per week',
+      image: '/projects/n8n-workflow.png',
+      imageAlt: 'n8n Automation Workflow',
     },
     {
       title: 'FastAPI-Based AI Backend',
@@ -17,6 +20,8 @@ export function Projects() {
         'Developed high-performance FastAPI backend for AI inference, supporting real-time model predictions and webhook integrations.',
       techStack: ['FastAPI', 'Python', 'PostgreSQL', 'Docker'],
       outcome: '< 100ms response times for AI inference with 99.9% uptime',
+      image: '/projects/fastapi-backend.png',
+      imageAlt: 'FastAPI Python Code',
     },
     {
       title: 'AI Passport Photo SaaS',
@@ -58,6 +63,21 @@ export function Projects() {
       <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
         {projects.map((project, index) => (
           <Card key={index}>
+            {/* Project Image - If available */}
+            {project.image && (
+              <div className="mb-6 -mx-6 -mt-6 sm:-mx-8 sm:-mt-8">
+                <div className="relative h-48 sm:h-56 overflow-hidden rounded-t-xl bg-slate-200">
+                  <LazyImage
+                    src={project.image}
+                    alt={project.imageAlt || project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              </div>
+            )}
+
             <div className="mb-6">
               <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 leading-tight">{project.title}</h3>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base">{project.description}</p>
