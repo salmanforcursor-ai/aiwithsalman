@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="150" fill="url(#accentGrad)" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="200" fill="url(#accentGrad)" opacity="0.1"/>
+  
+  <!-- Left section - Logo & Name -->
+  <g>
+    <!-- SJ Logo -->
+    <rect x="80" y="150" width="120" height="120" rx="20" fill="url(#accentGrad)"/>
+    <text x="140" y="230" font-family="Georgia, serif" font-size="60" font-weight="bold" fill="#ffffff" text-anchor="middle">SJ</text>
+    
+    <!-- Name -->
+    <text x="280" y="190" font-family="Inter, sans-serif" font-size="56" font-weight="900" fill="#ffffff">Salman</text>
+    <text x="280" y="250" font-family="Inter, sans-serif" font-size="56" font-weight="900" fill="#3b82f6">Joyia</text>
+    
+    <!-- Title -->
+    <text x="280" y="295" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#e0e7ff">Enterprise AI &amp; Automation Specialist</text>
+  </g>
+  
+  <!-- Right section - Value Props -->
+  <g>
+    <!-- Tech Stack Icons/Labels -->
+    <rect x="750" y="150" width="420" height="330" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    
+    <!-- Title -->
+    <text x="960" y="190" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Core Expertise</text>
+    
+    <!-- Feature 1 -->
+    <circle cx="790" cy="250" r="6" fill="#60a5fa"/>
+    <text x="820" y="250" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#ffffff">AI Automation</text>
+    <text x="820" y="272" font-family="Inter, sans-serif" font-size="13" fill="#d1d5db">n8n • Make.com • OpenAI</text>
+    
+    <!-- Feature 2 -->
+    <circle cx="790" cy="330" r="6" fill="#60a5fa"/>
+    <text x="820" y="330" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#ffffff">FastAPI Backend</text>
+    <text x="820" y="352" font-family="Inter, sans-serif" font-size="13" fill="#d1d5db">Python • APIs • Real-time</text>
+    
+    <!-- Feature 3 -->
+    <circle cx="790" cy="410" r="6" fill="#60a5fa"/>
+    <text x="820" y="410" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#ffffff">Enterprise Scale</text>
+    <text x="820" y="432" font-family="Inter, sans-serif" font-size="13" fill="#d1d5db">AWS • Cloud • Architecture</text>
+  </g>
+  
+  <!-- Bottom CTA -->
+  <rect x="80" y="520" width="1040" height="80" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(60,168,240,0.4)" stroke-width="2"/>
+  <text x="600" y="555" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">AI-Powered Automation Systems for Enterprise</text>
+  <text x="600" y="585" font-family="Inter, sans-serif" font-size="16" fill="#a5f3fc" text-anchor="middle">→ Visit aiwithsalman.vercel.app</text>
+</svg>
