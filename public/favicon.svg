@@ -1,23 +1,65 @@
 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="faviconGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stopColor="#1e40af" />
-      <stop offset="50%" stopColor="#2563eb" />
-      <stop offset="100%" stopColor="#3b82f6" />
+      <stop offset="0%" stopColor="#3b82f6" />
+      <stop offset="100%" stopColor="#1e40af" />
     </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <!-- Background Circle -->
-  <circle cx="20" cy="20" r="20" fill="url(#faviconGradient)" />
-  <!-- S Letter - Bold, filled, and prominent -->
-  <path
-    d="M10 20C10 15 13.5 11 18 11C22 11 25 13.5 25 17C25 19.5 23 21.5 20.5 21.5H17.5C16.5 21.5 16 22 16 23C16 24 16.5 24.5 17.5 24.5H20.5C23 24.5 25 26.5 25 29C25 32.5 22 35 18 35C13 35 10 31 10 25"
+  
+  <!-- Outer Ring -->
+  <circle cx="20" cy="20" r="19" fill="none" stroke="url(#faviconGradient)" strokeWidth="0.8" opacity="0.3"/>
+  
+  <!-- Background Gradient Circle -->
+  <circle cx="20" cy="20" r="18" fill="url(#faviconGradient)" opacity="0.95"/>
+  
+  <!-- Central Diamond Shape - represents AI core -->
+  <g filter="url(#glow)">
+    <path
+      d="M 20 8 L 28 16 L 20 24 L 12 16 Z"
+      fill="white"
+      opacity="0.95"
+    />
+  </g>
+  
+  <!-- Top Triangle - innovation -->
+  <polygon
+    points="20,6 23,13 17,13"
     fill="white"
+    opacity="0.8"
   />
-  <!-- J Letter - Bold, filled, and prominent -->
-  <path
-    d="M29 11V27C29 30.5 26 33.5 22.5 33.5C19 33.5 16.5 30.5 16.5 27V11H29Z"
+  
+  <!-- Left Triangle - logic -->
+  <polygon
+    points="8,20 13,23 13,17"
     fill="white"
+    opacity="0.7"
   />
-  <circle cx="22.5" cy="27" r="2" fill="url(#faviconGradient)" />
+  
+  <!-- Right Triangle - creativity -->
+  <polygon
+    points="32,20 27,23 27,17"
+    fill="white"
+    opacity="0.7"
+  />
+  
+  <!-- Bottom Triangle - precision -->
+  <polygon
+    points="20,34 23,27 17,27"
+    fill="white"
+    opacity="0.8"
+  />
+  
+  <!-- Inner Connection Lines - neural network inspired -->
+  <line x1="20" y1="16" x2="13" y2="20" stroke="white" strokeWidth="0.6" opacity="0.6"/>
+  <line x1="20" y1="16" x2="27" y2="20" stroke="white" strokeWidth="0.6" opacity="0.6"/>
+  <line x1="13" y1="20" x2="20" y2="24" stroke="white" strokeWidth="0.6" opacity="0.6"/>
+  <line x1="27" y1="20" x2="20" y2="24" stroke="white" strokeWidth="0.6" opacity="0.6"/>
 </svg>
 
