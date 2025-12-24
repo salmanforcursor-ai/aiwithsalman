@@ -57,10 +57,10 @@ export function Footer() {
                 <div>
                   <p className="text-xs sm:text-sm text-slate-500 uppercase font-semibold mb-1">Email</p>
                   <a
-                    href="mailto:contact@example.com"
+                    href="mailto:salmanjoyiaa@gmail.com"
                     className="text-base sm:text-lg font-semibold text-blue-600 hover:text-blue-700 transition-colors break-all"
                   >
-                    salman@example.com
+                    salmanjoyiaa@gmail.com
                   </a>
                 </div>
               </div>
@@ -70,12 +70,12 @@ export function Footer() {
                 <div>
                   <p className="text-xs sm:text-sm text-slate-500 uppercase font-semibold mb-1">LinkedIn</p>
                   <a
-                    href="https://linkedin.com/in/salman-iqbal"
+                    href="https://linkedin.com/in/salmanjoyiaa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base sm:text-lg font-semibold text-blue-600 hover:text-blue-700 transition-colors break-all"
                   >
-                    linkedin.com/in/salman-iqbal
+                    linkedin.com/in/salmanjoyiaa
                   </a>
                 </div>
               </div>
@@ -85,12 +85,12 @@ export function Footer() {
                 <div>
                   <p className="text-xs sm:text-sm text-slate-500 uppercase font-semibold mb-1">GitHub</p>
                   <a
-                    href="https://github.com/salman-iqbal"
+                    href="https://github.com/salmanjoyiaa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base sm:text-lg font-semibold text-blue-600 hover:text-blue-700 transition-colors break-all"
                   >
-                    github.com/salman-iqbal
+                    github.com/salmanjoyiaa
                   </a>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export function Footer() {
               <div className="flex justify-center">
                 <Button
                   variant="primary"
-                  href="mailto:salman@example.com"
+                  href="mailto:salmanjoyiaa@gmail.com"
                 >
                   Send Email
                 </Button>
@@ -113,7 +113,7 @@ export function Footer() {
           </div>
 
           <div className="text-center text-slate-500 text-sm sm:text-base px-4">
-            <p>© 2024 Salman Iqbal. AI Automation Engineer.</p>
+            <p>© 2025 Salman Iqbal Joyia. AI Automation Engineer.</p>
           </div>
         </div>
       </Section>
