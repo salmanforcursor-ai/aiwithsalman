@@ -63,21 +63,6 @@ export function Projects() {
       <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
         {projects.map((project, index) => (
           <Card key={index}>
-            {/* Project Image - If available */}
-            {project.image && (
-              <div className="mb-6 -mx-6 -mt-6 sm:-mx-8 sm:-mt-8">
-                <div className="relative h-48 sm:h-56 overflow-hidden rounded-t-xl bg-slate-200">
-                  <LazyImage
-                    src={project.image}
-                    alt={project.imageAlt || project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-              </div>
-            )}
-
             <div className="mb-6">
               <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 leading-tight">{project.title}</h3>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base">{project.description}</p>
