@@ -18,34 +18,35 @@ export function Logo({ className = '', size = 36, showText = true }: LogoProps) 
         >
           <defs>
             <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stopColor="#2563eb" />
-              <stop offset="100%" stopColor="#14b8a6" />
+              <stop offset="0%" stopColor="#1e40af" />
+              <stop offset="50%" stopColor="#2563eb" />
+              <stop offset="100%" stopColor="#3b82f6" />
             </linearGradient>
           </defs>
           {/* Background Circle */}
           <circle cx="20" cy="20" r="20" fill="url(#logoGradient)" />
-          {/* S Letter - Simplified and clearer */}
+          {/* S Letter - Clear and visible */}
           <path
-            d="M12 20C12 16.5 14.5 14 18 14C20.5 14 22 15.5 22 17.5C22 19 20.5 20.5 18.5 20.5H16.5C15.5 20.5 15 21 15 22C15 23 15.5 23.5 16.5 23.5H18.5C20.5 23.5 22 25 22 27C22 28.5 20.5 30 18 30C14.5 30 12 27.5 12 24"
+            d="M13 19C13 15.5 15.5 13 19 13C21.5 13 23 14.5 23 16.5C23 18 21.5 19.5 19.5 19.5H17.5C16.5 19.5 16 20 16 21C16 22 16.5 22.5 17.5 22.5H19.5C21.5 22.5 23 24 23 26C23 27.5 21.5 29 19 29C15.5 29 13 26.5 13 23"
             stroke="white"
-            strokeWidth="2.2"
+            strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
             fill="none"
           />
-          {/* J Letter - Simplified and clearer */}
+          {/* J Letter - Clear and visible */}
           <path
-            d="M26 14V26C26 29 23.5 31.5 20 31.5C16.5 31.5 14 29 14 26"
+            d="M27 14V26C27 29 24.5 31.5 21 31.5C17.5 31.5 15 29 15 26"
             stroke="white"
-            strokeWidth="2.2"
+            strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
             fill="none"
           />
           <path
-            d="M22 26C22 27.5 21 28.5 20 28.5C19 28.5 18 27.5 18 26"
+            d="M23 26C23 27.5 22 28.5 21 28.5C20 28.5 19 27.5 19 26"
             stroke="white"
-            strokeWidth="2.2"
+            strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
             fill="none"
