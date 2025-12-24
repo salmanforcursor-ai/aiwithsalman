@@ -39,6 +39,13 @@ export function Projects() {
       techStack: ['Python', 'WebSockets', 'n8n', 'Slack Integration'],
       outcome: '24/7 automated monitoring with 10s response time for critical issues',
     },
+    {
+      title: 'AI Voice Calling Agent',
+      description:
+        'Developed an AI-powered phone assistant using Twilio and n8n that answers calls, understands voice instructions, and performs tasks like sending emails, adding calendar reminders, and managing events.',
+      techStack: ['Twilio', 'n8n', 'OpenAI', 'Voice AI', 'Webhooks'],
+      outcome: 'Hands-free task automation with 24/7 availability and natural language understanding',
+    },
   ];
 
   return (
