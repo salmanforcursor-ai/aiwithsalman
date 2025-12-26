@@ -84,7 +84,7 @@ export function Logo({ className = '', size = 36, showText = true }: LogoProps) 
       </div>
       
       {showText && (
-        <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent hidden sm:inline">
+        <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent inline">
           Salman Iqbal
         </span>
       )}
